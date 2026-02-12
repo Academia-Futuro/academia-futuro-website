@@ -1,0 +1,49 @@
+body {
+      box-sizing: border-box;
+    }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Source Sans 3', sans-serif; }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(234, 179, 8, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(234, 179, 8, 0.5); }
+    }
+    
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-fade-in { animation: fadeInUp 0.8s ease-out forwards; }
+    .animate-delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .animate-delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .animate-delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .animate-delay-4 { animation-delay: 0.4s; opacity: 0; }
+    .animate-delay-5 { animation-delay: 0.5s; opacity: 0; }
+    
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #f59e0b 0%, #eab308 50%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .mesh-bg {
+      background: 
+        radial-gradient(at 20% 30%, rgba(234, 179, 8, 0.08) 0%, transparent 50%),
+        radial-gradient(at 80% 70%, rgba(234, 179, 8, 0.06) 0%, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(30, 41, 59, 1) 0%, rgba(15, 23, 42, 1) 100%);
+    }
